@@ -1,11 +1,12 @@
 
 $(document).ready(function() {
-
-fetchPoloniex()
+  $( "#reloadPoloniex" ).click(function() {
+    reloadPoloniex();
+  });
 });
 
 
-function fetchPoloniex () {
+function reloadPoloniex() {
    $.get(
     "https://poloniex.com/public?command=returnTicker",
     function(data) {
@@ -13,4 +14,3 @@ function fetchPoloniex () {
     }
   );
 }
-
