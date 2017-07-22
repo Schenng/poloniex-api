@@ -19,6 +19,8 @@ function reloadPoloniex() {
         data.push(temp)
       }
 
+      console.log(data);
+
       var body = $('#poloniexTable'),
 
       props = [
